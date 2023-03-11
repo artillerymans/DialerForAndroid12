@@ -29,7 +29,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.blocking.BlockedNumbersMigrator;
 import com.android.dialer.blocking.BlockedNumbersMigrator.Listener;
 import com.android.dialer.blocking.FilteredNumberCompat;

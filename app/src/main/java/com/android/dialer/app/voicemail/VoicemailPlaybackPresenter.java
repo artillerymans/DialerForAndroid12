@@ -43,7 +43,8 @@ import android.view.View;
 import android.view.WindowManager.LayoutParams;
 import android.webkit.MimeTypeMap;
 import com.android.common.io.MoreCloseables;
-import com.android.dialer.app.R;
+
+import com.android.dialer.R;
 import com.android.dialer.app.calllog.CallLogListItemViewHolder;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;

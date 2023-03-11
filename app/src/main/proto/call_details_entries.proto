@@ -1,10 +1,10 @@
-syntax = "proto3";
+syntax = "proto2";
 
 option java_package = "com.android.dialer.calldetails";
 option java_multiple_files = true;
 
 
-import "proto/history_result.proto";
+import "history_result.proto";
 
 package com.android.dialer.calldetails;
 

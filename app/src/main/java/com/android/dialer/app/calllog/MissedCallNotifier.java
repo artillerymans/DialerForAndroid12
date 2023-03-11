@@ -43,7 +43,7 @@ import android.text.TextUtils;
 import android.util.ArraySet;
 import com.android.contacts.common.ContactsUtils;
 import com.android.dialer.app.MainComponent;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.app.calllog.CallLogNotificationsQueryHelper.NewCall;
 import com.android.dialer.app.contactinfo.ContactPhotoLoader;
 import com.android.dialer.callintent.CallInitiationType;

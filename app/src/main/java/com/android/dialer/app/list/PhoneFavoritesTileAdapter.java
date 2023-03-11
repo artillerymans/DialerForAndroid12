@@ -37,7 +37,7 @@ import android.widget.BaseAdapter;
 import com.android.contacts.common.ContactTileLoaderFactory;
 import com.android.contacts.common.list.ContactEntry;
 import com.android.contacts.common.list.ContactTileView;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.contactphoto.ContactPhotoManager;
 import com.android.dialer.contacts.ContactsComponent;

@@ -33,7 +33,7 @@ import android.telephony.TelephonyManager;
 import android.view.MenuItem;
 import android.widget.Toast;
 import com.android.dialer.about.AboutPhoneFragment;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.assisteddialing.ConcreteCreator;
 import com.android.dialer.blocking.FilteredNumberCompat;
 import com.android.dialer.common.LogUtil;

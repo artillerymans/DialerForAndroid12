@@ -30,7 +30,7 @@ import android.telecom.TelecomManager;
 import android.telephony.CarrierConfigManager;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.location.GeoUtil;

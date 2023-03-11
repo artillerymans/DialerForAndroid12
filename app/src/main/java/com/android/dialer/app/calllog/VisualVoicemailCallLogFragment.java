@@ -28,7 +28,7 @@ import androidx.annotation.VisibleForTesting;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.app.voicemail.VoicemailAudioManager;
 import com.android.dialer.app.voicemail.VoicemailErrorManager;
 import com.android.dialer.app.voicemail.VoicemailPlaybackPresenter;

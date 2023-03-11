@@ -40,7 +40,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.app.calllog.calllogcache.CallLogCache;
 import com.android.dialer.calllogutils.PhoneCallDetails;
 import com.android.dialer.common.LogUtil;

@@ -34,7 +34,7 @@ import android.telephony.TelephonyManager;
 import android.text.TextUtils;
 import com.android.contacts.common.util.ContactDisplayUtils;
 import com.android.dialer.app.MainComponent;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.app.calllog.CallLogNotificationsQueryHelper.NewCall;
 import com.android.dialer.app.contactinfo.ContactPhotoLoader;
 import com.android.dialer.common.LogUtil;

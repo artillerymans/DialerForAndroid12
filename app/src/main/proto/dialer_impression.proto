@@ -1,4 +1,4 @@
-syntax = "proto3";
+syntax = "proto2";
 
 package com.android.dialer.logging;
 option java_package = "com.android.dialer.logging";

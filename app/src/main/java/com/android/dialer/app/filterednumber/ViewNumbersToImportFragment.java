@@ -28,7 +28,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.blocking.FilteredNumbersUtil;
 import com.android.dialer.blocking.FilteredNumbersUtil.ImportSendToVoicemailContactsListener;
 

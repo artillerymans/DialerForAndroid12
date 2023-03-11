@@ -1,15 +1,11 @@
-syntax = "proto3";
-
-
+syntax = "proto2";
 
 option java_package = "com.android.dialer.blockreportspam";
 option java_multiple_files = true;
 
-
 package com.android.dialer.blockreportspam;
-
-import "proto/contact_source.proto";
-import "proto/reporting_location.proto";
+import "contact_source.proto";
+import "reporting_location.proto";
 
 // Contains information needed in dialogs that allow a user to block a number
 // and/or report it as spam/not spam.

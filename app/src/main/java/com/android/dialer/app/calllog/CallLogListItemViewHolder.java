@@ -51,7 +51,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.android.contacts.common.dialog.CallSubjectDialog;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.app.calllog.CallLogAdapter.OnActionModeStateChangedListener;
 import com.android.dialer.app.calllog.calllogcache.CallLogCache;
 import com.android.dialer.app.voicemail.VoicemailPlaybackLayout;

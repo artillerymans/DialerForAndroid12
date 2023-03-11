@@ -1,11 +1,11 @@
-syntax = "proto3";
+syntax = "proto2";
 
 option java_package = "com.android.dialer.calldetails";
 option java_multiple_files = true;
 
 
-import "proto/dialer_phone_number.proto";
-import "proto/photo_info.proto";
+import "dialer_phone_number.proto";
+import "photo_info.proto";
 
 package com.android.dialer.calldetails;
 

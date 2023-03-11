@@ -14,7 +14,7 @@
  * limitations under the License
  */
 
-package com.google.internal.communications.voicemailtranscription.v1;
+package com.android.voicemail.impl;
 
 import static io.grpc.stub.ClientCalls.asyncUnaryCall;
 import static io.grpc.stub.ClientCalls.asyncServerStreamingCall;

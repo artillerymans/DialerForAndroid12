@@ -18,7 +18,7 @@ package com.android.dialer.app.filterednumber;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.logging.Logger;
 import com.android.dialer.logging.ScreenEvent;
 

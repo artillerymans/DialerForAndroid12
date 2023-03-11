@@ -28,7 +28,7 @@ import android.os.Bundle;
 import android.provider.CallLog.Calls;
 import androidx.annotation.Nullable;
 import com.google.android.material.snackbar.Snackbar;
-import com.android.dialer.app.R;
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.concurrent.DialerExecutor;
 import com.android.dialer.common.concurrent.DialerExecutor.Worker;
