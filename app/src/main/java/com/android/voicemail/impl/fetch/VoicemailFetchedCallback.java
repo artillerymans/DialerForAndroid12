@@ -23,9 +23,10 @@ import android.provider.VoicemailContract.Voicemails;
 import androidx.annotation.Nullable;
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.concurrent.ThreadUtil;
-import com.android.voicemail.impl.R;
 import com.android.voicemail.impl.VvmLog;
 import com.android.voicemail.impl.imap.VoicemailPayload;
 import com.android.voicemail.impl.transcribe.TranscriptionService;
