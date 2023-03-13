@@ -25,6 +25,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.theme.base.ThemeComponent;
 
 public class EmptyContentView extends LinearLayout implements View.OnClickListener {

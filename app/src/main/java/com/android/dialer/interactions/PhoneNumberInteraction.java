@@ -52,6 +52,7 @@ import com.android.contacts.common.Collapser;
 import com.android.contacts.common.Collapser.Collapsible;
 import com.android.contacts.common.MoreContactUtils;
 import com.android.contacts.common.util.ContactDisplayUtils;
+import com.android.dialer.R;
 import com.android.dialer.callintent.CallInitiationType;
 import com.android.dialer.callintent.CallIntentBuilder;
 import com.android.dialer.callintent.CallIntentParser;

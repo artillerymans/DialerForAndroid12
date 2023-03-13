@@ -23,3 +23,5 @@
     public static void v(...);
     public static void d(...);
 }
+-dontwarn java.lang.ClassValue
+-dontwarn javax.lang.model.element.Modifier

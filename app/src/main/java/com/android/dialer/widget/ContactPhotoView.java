@@ -25,6 +25,8 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.glidephotomanager.GlidePhotoManager;
 import com.android.dialer.glidephotomanager.GlidePhotoManagerComponent;

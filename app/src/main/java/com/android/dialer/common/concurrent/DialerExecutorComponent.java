@@ -16,8 +16,10 @@
 
 package com.android.dialer.common.concurrent;
 
-import android.app.FragmentManager;
 import android.content.Context;
+
+import androidx.fragment.app.FragmentManager;
+
 import com.android.dialer.common.concurrent.Annotations.BackgroundExecutor;
 import com.android.dialer.common.concurrent.Annotations.LightweightExecutor;
 import com.android.dialer.common.concurrent.Annotations.NonUiParallel;
@@ -45,11 +47,6 @@ public abstract class DialerExecutorComponent {
 
   @LightweightExecutor
   public abstract ListeningExecutorService lightweightExecutor();
-
-  public <OutputT> UiListener<OutputT> createUiListener(
-      FragmentManager fragmentManager, String taskId) {
-    return UiListener.create(fragmentManager, taskId);
-  }
 
   /**
    * Version of {@link #createUiListener(FragmentManager, String)} that accepts support fragment

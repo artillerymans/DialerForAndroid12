@@ -22,6 +22,7 @@ import com.google.common.collect.ImmutableList;
 import javax.annotation.processing.Processor;
 import javax.lang.model.SourceVersion;
 
+
 /** Processes annotations defined by RootComponentGenerator. */
 @AutoService(Processor.class)
 public class RootComponentProcessor extends BasicAnnotationProcessor {

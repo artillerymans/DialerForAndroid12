@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.provider.ContactsContract.StatusUpdates;
 
+import com.android.dialer.R;
+
 /** Provides static function to get default contact status message. */
 public class ContactStatusUtil {
 

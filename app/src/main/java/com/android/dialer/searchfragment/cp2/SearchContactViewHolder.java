@@ -30,6 +30,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.contactphoto.ContactPhotoManager;
 import com.android.dialer.dialercontact.DialerContact;
@@ -40,7 +42,6 @@ import com.android.dialer.enrichedcall.EnrichedCallManager;
 import com.android.dialer.lettertile.LetterTileDrawable;
 import com.android.dialer.searchfragment.common.Projections;
 import com.android.dialer.searchfragment.common.QueryBoldingUtil;
-import com.android.dialer.searchfragment.common.R;
 import com.android.dialer.searchfragment.common.RowClickListener;
 import com.android.dialer.searchfragment.common.SearchCursor;
 import com.android.dialer.widget.BidiTextView;

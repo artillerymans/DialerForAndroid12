@@ -29,12 +29,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.cp2.DirectoryUtils;
 import com.android.dialer.contactphoto.ContactPhotoManager;
 import com.android.dialer.lettertile.LetterTileDrawable;
 import com.android.dialer.searchfragment.common.Projections;
 import com.android.dialer.searchfragment.common.QueryBoldingUtil;
-import com.android.dialer.searchfragment.common.R;
 import com.android.dialer.searchfragment.common.RowClickListener;
 import com.android.dialer.searchfragment.common.SearchCursor;
 

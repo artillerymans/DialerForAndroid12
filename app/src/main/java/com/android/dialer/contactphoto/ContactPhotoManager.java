@@ -28,6 +28,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.lettertile.LetterTileDrawable;
 import com.android.dialer.util.PermissionsUtil;

@@ -23,6 +23,8 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.appcompat.app.AlertDialog;
 
+import com.android.dialer.R;
+
 /** Dialog for spam blocking on-boarding promotion. */
 public class SpamBlockingPromoDialogFragment extends DialogFragment {
 

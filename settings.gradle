@@ -12,6 +12,11 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+
+
 rootProject.name = "DialerForAndroid12"
 include ':app'
 include ':libackup'
+include ':common'
+include ':custom'

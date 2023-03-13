@@ -23,6 +23,8 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface.OnDismissListener;
 import android.graphics.drawable.Icon;
+
+import com.android.dialer.R;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.core.os.BuildCompat;

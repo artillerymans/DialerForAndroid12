@@ -23,6 +23,7 @@ import android.provider.CallLog.Calls;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresPermission;
 import com.android.dialer.CoalescedIds;
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.common.concurrent.DialerExecutor.Worker;

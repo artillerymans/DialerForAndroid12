@@ -34,6 +34,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
 import android.view.View;
+
+import com.android.dialer.R;
 import com.android.dialer.assisteddialing.ui.AssistedDialingSettingActivity;
 import com.android.dialer.calldetails.CallDetailsEntries.CallDetailsEntry;
 import com.android.dialer.callintent.CallInitiationType;
@@ -126,6 +128,7 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
           PerformanceReport.recordClick(UiAction.Type.CLOSE_CALL_DETAIL_WITH_CANCEL_BUTTON);
           finish();
         });
+
     checkRttTranscriptAvailabilityListener =
         DialerExecutorComponent.get(this)
             .createUiListener(getFragmentManager(), "Query RTT transcript availability");
