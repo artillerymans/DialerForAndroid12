@@ -34,7 +34,7 @@ public class RootComponentProcessor extends BasicAnnotationProcessor {
   }
 
   @Override
-  public SourceVersion getSupportedSourceVersion() {
+  public SourceVersion getSupportedSourceVersion(){
     return SourceVersion.latestSupported();
   }
 }
