@@ -33,6 +33,7 @@ import android.provider.CallLog.Calls;
 import android.provider.ContactsContract;
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -85,7 +86,7 @@ public class CallLogFragment extends Fragment
         CallFetcher,
         MultiSelectRemoveView,
         OnEmptyViewActionButtonClickedListener,
-        OnRequestPermissionsResultCallback,
+        ActivityCompat.OnRequestPermissionsResultCallback,
         CallLogModalAlertManager.Listener,
         OnClickListener {
   private static final String KEY_FILTER_TYPE = "filter_type";

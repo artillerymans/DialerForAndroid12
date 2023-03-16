@@ -38,6 +38,7 @@ import android.text.TextUtils;
 import android.util.ArrayMap;
 import com.android.contacts.common.ContactsUtils;
 import com.android.contacts.common.compat.CallCompat;
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.contactphoto.BitmapUtil;
 import com.android.dialer.contacts.ContactsComponent;

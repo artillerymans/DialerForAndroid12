@@ -43,6 +43,7 @@ import android.widget.Toast;
 import com.android.contacts.common.compat.CallCompat;
 import com.android.dialer.CallConfiguration;
 import com.android.dialer.Mode;
+import com.android.dialer.R;
 import com.android.dialer.blocking.FilteredNumberAsyncQueryHandler;
 import com.android.dialer.blocking.FilteredNumberAsyncQueryHandler.OnCheckBlockedListener;
 import com.android.dialer.blocking.FilteredNumberCompat;

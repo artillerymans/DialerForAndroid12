@@ -25,6 +25,8 @@ import android.view.SoundEffectConstants;
 import android.widget.Checkable;
 import android.widget.ImageButton;
 
+import com.android.dialer.R;
+
 /** Image button that maintains a checked state. */
 public class CheckableImageButton extends ImageButton implements Checkable {
 

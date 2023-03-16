@@ -26,6 +26,7 @@ import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
 import com.android.contacts.common.util.MaterialColorMapUtils;
 import com.android.contacts.common.util.MaterialColorMapUtils.MaterialPalette;
+import com.android.dialer.R;
 import com.android.incallui.call.DialerCall;
 
 /**

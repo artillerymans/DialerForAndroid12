@@ -33,6 +33,8 @@ import androidx.annotation.MainThread;
 import androidx.annotation.RequiresPermission;
 import androidx.annotation.WorkerThread;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
 import com.android.dialer.phonenumbercache.CachedNumberLookupService;
 import com.android.dialer.phonenumbercache.CachedNumberLookupService.CachedContactInfo;
 import com.android.dialer.phonenumbercache.ContactInfoHelper;
