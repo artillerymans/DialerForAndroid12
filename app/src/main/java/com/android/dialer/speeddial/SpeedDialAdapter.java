@@ -29,6 +29,8 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.animation.AnticipateInterpolator;
 import android.widget.FrameLayout;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.speeddial.FavoritesViewHolder.FavoriteContactsListener;
 import com.android.dialer.speeddial.HeaderViewHolder.SpeedDialHeaderListener;

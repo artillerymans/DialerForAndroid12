@@ -26,6 +26,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.contactphoto.ContactPhotoManager;
@@ -129,7 +131,7 @@ final class ContactsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     String photoDescription =
         context.getString(
-            com.android.dialer.contactphoto.R.string.description_quick_contact_for, name);
+            R.string.description_quick_contact_for, name);
     contactViewHolder.getPhoto().setContentDescription(photoDescription);
 
     // Always show the view holder's header if it's the first item in the list. Otherwise, compare

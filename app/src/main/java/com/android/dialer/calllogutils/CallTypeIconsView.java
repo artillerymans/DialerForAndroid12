@@ -27,6 +27,8 @@ import android.provider.CallLog.Calls;
 import androidx.annotation.VisibleForTesting;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.android.dialer.R;
 import com.android.dialer.theme.base.Theme;
 import com.android.dialer.theme.base.ThemeComponent;
 import java.util.ArrayList;

@@ -28,6 +28,8 @@ import android.telecom.TelecomManager;
 import android.text.TextUtils;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.glide.GlideApp;
 import com.android.dialer.glide.GlideRequest;

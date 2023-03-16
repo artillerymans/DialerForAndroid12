@@ -22,6 +22,8 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.historyitemactions.HistoryItemBottomSheetHeaderInfo;
 import com.android.dialer.location.GeoUtil;

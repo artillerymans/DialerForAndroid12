@@ -52,7 +52,7 @@ public abstract class TransactionSafeActivity extends AppCompatActivity {
   }
 
   /**
-   * Returns true if it is safe to commit {@link FragmentTransaction}s at this time, based on
+   * Returns true if it is safe to commit {@link androidx.fragment.app.FragmentTransaction}s at this time, based on
    * whether {@link Activity#onSaveInstanceState} has been called or not.
    *
    * <p>Make sure that the current activity calls into {@link super.onSaveInstanceState(Bundle

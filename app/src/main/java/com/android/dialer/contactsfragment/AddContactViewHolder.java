@@ -20,6 +20,8 @@ import android.content.Context;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.android.dialer.R;
 import com.android.dialer.util.DialerUtils;
 import com.android.dialer.util.IntentUtil;
 

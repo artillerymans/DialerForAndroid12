@@ -29,6 +29,8 @@ import android.provider.VoicemailContract.Voicemails;
 import androidx.annotation.IntDef;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
+
+import com.android.dialer.R;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;

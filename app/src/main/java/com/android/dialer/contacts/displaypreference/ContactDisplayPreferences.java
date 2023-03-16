@@ -20,6 +20,9 @@ import android.content.Context;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
+
 import java.util.Arrays;
 
 /** Handles name ordering of a contact (Given name first or family name first.) */

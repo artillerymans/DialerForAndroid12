@@ -27,6 +27,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.android.dialer.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

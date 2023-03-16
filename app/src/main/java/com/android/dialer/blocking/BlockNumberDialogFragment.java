@@ -25,6 +25,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
+
+import com.android.dialer.R;
 import com.google.android.material.snackbar.Snackbar;
 import android.telephony.PhoneNumberUtils;
 import android.text.TextUtils;

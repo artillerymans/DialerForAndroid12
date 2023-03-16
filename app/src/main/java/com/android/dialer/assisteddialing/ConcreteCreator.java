@@ -22,6 +22,8 @@ import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
 import androidx.core.os.UserManagerCompat;
 import android.telephony.TelephonyManager;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.configprovider.ConfigProvider;
 import com.android.dialer.configprovider.ConfigProviderComponent;

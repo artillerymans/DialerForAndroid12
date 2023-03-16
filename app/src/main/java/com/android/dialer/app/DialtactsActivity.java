@@ -36,6 +36,8 @@ import android.speech.RecognizerIntent;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.android.dialer.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton.OnVisibilityChangedListener;
 import com.google.android.material.snackbar.Snackbar;

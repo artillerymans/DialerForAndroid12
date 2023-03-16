@@ -26,6 +26,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.logging.DialerImpression;
 import com.android.dialer.logging.Logger;

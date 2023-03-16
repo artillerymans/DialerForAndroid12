@@ -27,6 +27,8 @@ import android.provider.ContactsContract.Directory;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.contacts.ContactsComponent;
 import com.android.dialer.contacts.displaypreference.ContactDisplayPreferences.DisplayOrder;

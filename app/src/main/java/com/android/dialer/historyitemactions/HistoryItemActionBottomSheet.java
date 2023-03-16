@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.android.dialer.R;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -69,8 +71,8 @@ public class HistoryItemActionBottomSheet extends BottomSheetDialog implements O
   private final OnPreDrawListener onPreDrawListenerForContactLayout =
       () -> {
         View contactLayout = findViewById(R.id.contact_layout_root);
-        View background = findViewById(android.support.design.R.id.touch_outside);
-        View bottomSheet = findViewById(android.support.design.R.id.design_bottom_sheet);
+        View background = findViewById(com.google.android.material.R.id.touch_outside);
+        View bottomSheet = findViewById(com.google.android.material.R.id.design_bottom_sheet);
 
         BottomSheetBehavior<View> behavior = BottomSheetBehavior.from(bottomSheet);
 
@@ -146,7 +148,7 @@ public class HistoryItemActionBottomSheet extends BottomSheetDialog implements O
     // bottom sheet is not fully expanded.
     if (isTouchExplorationEnabled()) {
       BottomSheetBehavior<View> behavior =
-          BottomSheetBehavior.from(findViewById(android.support.design.R.id.design_bottom_sheet));
+          BottomSheetBehavior.from(findViewById(com.google.android.material.R.id.design_bottom_sheet));
       behavior.setState(BottomSheetStateCompat.STATE_EXPANDED);
     }
   }
@@ -164,7 +166,7 @@ public class HistoryItemActionBottomSheet extends BottomSheetDialog implements O
    */
   private void setupBottomSheetBehavior() {
     BottomSheetBehavior<View> behavior =
-        BottomSheetBehavior.from(findViewById(android.support.design.R.id.design_bottom_sheet));
+        BottomSheetBehavior.from(findViewById(com.google.android.material.R.id.design_bottom_sheet));
     behavior.setBottomSheetCallback(
         new BottomSheetCallback() {
           @Override

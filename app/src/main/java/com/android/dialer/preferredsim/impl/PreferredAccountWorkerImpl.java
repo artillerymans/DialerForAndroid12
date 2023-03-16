@@ -39,6 +39,7 @@ import android.telecom.TelecomManager;
 import android.text.TextUtils;
 import com.android.contacts.common.widget.SelectPhoneAccountDialogOptions;
 import com.android.contacts.common.widget.SelectPhoneAccountDialogOptionsUtil;
+import com.android.dialer.R;
 import com.android.dialer.activecalls.ActiveCallInfo;
 import com.android.dialer.activecalls.ActiveCallsComponent;
 import com.android.dialer.common.Assert;

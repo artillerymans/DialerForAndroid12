@@ -23,6 +23,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import androidx.annotation.VisibleForTesting;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import java.util.ArrayList;
 import java.util.Collections;

@@ -38,6 +38,8 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.dialer.R;
 import com.android.dialer.callcomposer.camera.CameraManager;
 import com.android.dialer.callcomposer.camera.CameraManager.CameraManagerListener;
 import com.android.dialer.callcomposer.camera.CameraManager.MediaCallback;

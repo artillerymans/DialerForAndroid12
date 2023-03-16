@@ -24,6 +24,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.contactsfragment.ContactsFragment.OnContactSelectedListener;
 import com.android.dialer.logging.InteractionEvent;

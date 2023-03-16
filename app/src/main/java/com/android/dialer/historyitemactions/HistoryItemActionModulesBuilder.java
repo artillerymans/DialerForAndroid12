@@ -23,6 +23,8 @@ import android.provider.CallLog.Calls;
 import android.provider.ContactsContract;
 import androidx.annotation.IntDef;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
 import com.android.dialer.blockreportspam.BlockReportSpamDialogInfo;
 import com.android.dialer.callintent.CallInitiationType;
 import com.android.dialer.callintent.CallIntentBuilder;

@@ -62,6 +62,7 @@ kapt {
 dependencies {
 
     implementation project(path: ':custom')
+    implementation project(path: ':RootComponentGenerator')
     compileOnly files('libs/framework.jar')
 
     implementation 'androidx.core:core-ktx:1.7.0'

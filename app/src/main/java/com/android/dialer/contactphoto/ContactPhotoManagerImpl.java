@@ -52,6 +52,8 @@ import android.util.LruCache;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.constants.Constants;
 import com.android.dialer.constants.TrafficStatsTags;

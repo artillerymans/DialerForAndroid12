@@ -20,6 +20,8 @@ import android.content.res.Resources;
 import android.provider.CallLog.Calls;
 import androidx.annotation.VisibleForTesting;
 import android.telephony.TelephonyManager;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.common.PackageUtils;
 import com.android.dialer.configprovider.ConfigProviderComponent;

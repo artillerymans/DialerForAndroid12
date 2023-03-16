@@ -35,6 +35,9 @@ import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.LinearInterpolator;
 import android.view.animation.Transformation;
+
+import com.android.dialer.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

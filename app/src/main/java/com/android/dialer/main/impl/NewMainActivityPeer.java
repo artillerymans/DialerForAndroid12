@@ -22,6 +22,8 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
+import com.android.dialer.R;
 import com.android.dialer.calllog.CallLogComponent;
 import com.android.dialer.calllog.ui.NewCallLogFragment;
 import com.android.dialer.common.concurrent.DefaultFutureCallback;

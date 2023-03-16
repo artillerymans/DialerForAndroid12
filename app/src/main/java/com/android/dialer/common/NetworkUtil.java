@@ -27,6 +27,9 @@ import androidx.annotation.RequiresPermission;
 import androidx.annotation.StringDef;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Objects;

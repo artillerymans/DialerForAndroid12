@@ -35,6 +35,8 @@ import android.text.style.TextAppearanceSpan;
 import android.text.style.URLSpan;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.compat.telephony.TelephonyManagerCompat;
 import com.android.dialer.configprovider.ConfigProviderComponent;

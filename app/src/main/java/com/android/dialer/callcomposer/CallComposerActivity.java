@@ -51,6 +51,8 @@ import android.widget.QuickContactBadge;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.dialer.R;
 import com.android.dialer.callcomposer.CallComposerFragment.CallComposerListener;
 import com.android.dialer.callintent.CallInitiationType;
 import com.android.dialer.callintent.CallIntentBuilder;
@@ -611,7 +613,7 @@ public class CallComposerActivity extends AppCompatActivity
           TextUtils.isEmpty(contact.getNumberLabel())
               ? contact.getDisplayNumber()
               : getString(
-                  com.android.dialer.contacts.resources.R.string.call_subject_type_and_number,
+                  R.string.call_subject_type_and_number,
                   contact.getNumberLabel(),
                   contact.getDisplayNumber());
       numberView.setText(secondaryInfo);

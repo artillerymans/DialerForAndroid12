@@ -166,7 +166,7 @@ public class DialerSettingsActivity extends AppCompatPreferenceActivity {
 
       Header assistedDialingSettingsHeader = new Header();
       assistedDialingSettingsHeader.titleRes =
-          com.android.dialer.assisteddialing.ui.R.string.assisted_dialing_setting_title;
+          R.string.assisted_dialing_setting_title;
       assistedDialingSettingsHeader.intent =
           new Intent("com.android.dialer.app.settings.SHOW_ASSISTED_DIALING_SETTINGS");
       target.add(assistedDialingSettingsHeader);

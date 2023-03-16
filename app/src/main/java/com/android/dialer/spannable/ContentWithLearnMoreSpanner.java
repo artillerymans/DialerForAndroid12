@@ -20,6 +20,8 @@ import androidx.annotation.NonNull;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.TypefaceSpan;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 
 /**

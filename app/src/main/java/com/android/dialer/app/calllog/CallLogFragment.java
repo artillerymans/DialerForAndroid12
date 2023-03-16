@@ -19,7 +19,6 @@ package com.android.dialer.app.calllog;
 import static android.Manifest.permission.READ_CALL_LOG;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.KeyguardManager;
 import android.content.ContentResolver;
 import android.content.Context;
@@ -34,9 +33,10 @@ import android.provider.CallLog.Calls;
 import android.provider.ContactsContract;
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
-import androidx.legacy.app.FragmentCompat;
-import androidx.legacy.app.FragmentCompat.OnRequestPermissionsResultCallback;
+import androidx.fragment.app.Fragment;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.legacy.app.FragmentCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;

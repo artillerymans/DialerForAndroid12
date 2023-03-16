@@ -22,6 +22,8 @@ import androidx.annotation.PluralsRes;
 import android.telecom.PhoneAccountHandle;
 import android.telephony.PhoneNumberUtils;
 import android.text.TextUtils;
+
+import com.android.dialer.R;
 import com.android.dialer.calllog.model.CoalescedRow;
 import com.android.dialer.telecom.TelecomUtil;
 import com.android.dialer.time.Clock;

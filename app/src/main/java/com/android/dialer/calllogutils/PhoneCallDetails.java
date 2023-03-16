@@ -26,6 +26,7 @@ import android.telecom.PhoneAccountHandle;
 import android.text.TextUtils;
 import com.android.contacts.common.ContactsUtils.UserType;
 import com.android.contacts.common.util.ContactDisplayUtils;
+import com.android.dialer.R;
 import com.android.dialer.contacts.displaypreference.ContactDisplayPreferences.DisplayOrder;
 import com.android.dialer.logging.ContactSource;
 import com.android.dialer.phonenumbercache.ContactInfo;

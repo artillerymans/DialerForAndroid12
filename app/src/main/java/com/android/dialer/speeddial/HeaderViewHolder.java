@@ -23,6 +23,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.android.dialer.R;
+
 /** ViewHolder for headers in {@link SpeedDialFragment}. */
 public class HeaderViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
 
