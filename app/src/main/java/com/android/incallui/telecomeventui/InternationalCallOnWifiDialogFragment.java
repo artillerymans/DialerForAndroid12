@@ -27,6 +27,8 @@ import androidx.fragment.app.DialogFragment;
 import androidx.core.os.UserManagerCompat;
 import android.view.View;
 import android.widget.CheckBox;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.FragmentUtils;
 import com.android.dialer.common.LogUtil;

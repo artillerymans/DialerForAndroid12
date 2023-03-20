@@ -131,7 +131,7 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
 
     checkRttTranscriptAvailabilityListener =
         DialerExecutorComponent.get(this)
-            .createUiListener(getFragmentManager(), "Query RTT transcript availability");
+            .createUiListener(getSupportFragmentManager(), "Query RTT transcript availability");
     handleIntent(getIntent());
     setupRecyclerViewForEntries();
   }

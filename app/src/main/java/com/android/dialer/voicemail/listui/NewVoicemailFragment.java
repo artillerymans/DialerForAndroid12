@@ -74,7 +74,7 @@ public final class NewVoicemailFragment extends Fragment implements LoaderCallba
     queryVoicemailStatusTableListener =
         DialerExecutorComponent.get(getContext())
             .createUiListener(
-                getActivity().getFragmentManager(),
+                getActivity().getSupportFragmentManager(),
                 "NewVoicemailFragment.queryVoicemailStatusTable");
   }
 

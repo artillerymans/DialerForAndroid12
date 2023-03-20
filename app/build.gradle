@@ -107,7 +107,8 @@ dependencies {
     implementation 'io.grpc:grpc-all:1.52.1'
     compileOnly 'org.apache.tomcat:annotations-api:6.0.53' // necessary for Java 9+
 
-    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'androidx.fragment:fragment:1.5.5'
+
 
     implementation("org.apache.james:apache-mime4j:0.8.9"){
         exclude group: "org.apache.james", module: "apache-mime4j-benchmark"

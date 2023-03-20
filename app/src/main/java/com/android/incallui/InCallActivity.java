@@ -190,7 +190,7 @@ public class InCallActivity extends TransactionSafeFragmentActivity
 
     preferredAccountWorkerResultListener =
         DialerExecutorComponent.get(this)
-            .createUiListener(getFragmentManager(), "preferredAccountWorkerResultListener");
+            .createUiListener(getSupportFragmentManager(), "preferredAccountWorkerResultListener");
 
     selectPhoneAccountListener = new SelectPhoneAccountListener(getApplicationContext());
 

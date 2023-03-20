@@ -262,7 +262,7 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
   private void initUiListeners() {
     getLastOutgoingCallListener =
         DialerExecutorComponent.get(activity)
-            .createUiListener(activity.getFragmentManager(), "Query last phone number");
+            .createUiListener(activity.getSupportFragmentManager(), "Query last phone number");
     missedCallObserverUiListener =
         DialerExecutorComponent.get(activity)
             .createUiListener(activity.getFragmentManager(), "Missed call observer");
@@ -296,7 +296,7 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
     bottomNavTabListener =
         new MainBottomNavBarBottomNavTabListener(
             activity,
-            activity.getFragmentManager(),
+            activity.getSupportFragmentManager(),
             activity.getSupportFragmentManager(),
             fab,
             bottomSheet);

@@ -18,7 +18,6 @@ package com.android.dialer.app.list;
 
 import static androidx.viewpager.widget.ViewPager.SCROLL_STATE_SETTLING;
 
-import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.database.ContentObserver;
 import android.database.Cursor;
@@ -27,6 +26,8 @@ import android.os.Handler;
 import android.os.Trace;
 import android.preference.PreferenceManager;
 import android.provider.VoicemailContract;
+
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import android.view.LayoutInflater;
 import android.view.View;

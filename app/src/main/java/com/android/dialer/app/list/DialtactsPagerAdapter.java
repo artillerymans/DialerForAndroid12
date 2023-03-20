@@ -16,10 +16,11 @@
 
 package com.android.dialer.app.list;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import androidx.annotation.IntDef;
-import androidx.legacy.app.FragmentPagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+
 import android.view.ViewGroup;
 import com.android.dialer.app.calllog.CallLogFragment;
 import com.android.dialer.app.calllog.VisualVoicemailCallLogFragment;

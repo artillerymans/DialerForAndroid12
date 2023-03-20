@@ -28,6 +28,8 @@ import android.text.TextDirectionHeuristics;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.contacts.ContactsComponent;

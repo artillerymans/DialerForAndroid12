@@ -25,6 +25,8 @@ import android.telecom.CallAudioState;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.incallui.incall.impl.CheckableLabeledButton.OnCheckedChangeListener;
 import com.android.incallui.incall.protocol.InCallButtonIds;

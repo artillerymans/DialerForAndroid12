@@ -52,9 +52,9 @@ public abstract class DialerExecutorComponent {
    * Version of {@link #createUiListener(FragmentManager, String)} that accepts support fragment
    * manager.
    */
-  public <OutputT> SupportUiListener<OutputT> createUiListener(
+  public <OutputT> UiListener<OutputT> createUiListener(
       FragmentManager fragmentManager, String taskId) {
-    return SupportUiListener.create(fragmentManager, taskId);
+    return UiListener.create(fragmentManager, taskId);
   }
 
   public static DialerExecutorComponent get(Context context) {

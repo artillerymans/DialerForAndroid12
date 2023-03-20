@@ -15,15 +15,16 @@
  */
 package com.android.dialer.app.calllog;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.CallLog;
 import android.provider.CallLog.Calls;
 import androidx.annotation.VisibleForTesting;
 import com.google.android.material.snackbar.Snackbar;
-import androidx.legacy.app.FragmentPagerAdapter;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.ActionBar;
 import android.view.Menu;
@@ -89,7 +90,7 @@ public class CallLogActivity extends TransactionSafeActivity
 
     viewPager = (ViewPager) findViewById(R.id.call_log_pager);
 
-    viewPagerAdapter = new ViewPagerAdapter(getFragmentManager());
+    viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
     viewPager.setAdapter(viewPagerAdapter);
     viewPager.setOffscreenPageLimit(1);
     viewPager.setOnPageChangeListener(this);

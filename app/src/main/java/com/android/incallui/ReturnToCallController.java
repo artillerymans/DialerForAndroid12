@@ -30,6 +30,7 @@ import com.android.bubble.Bubble;
 import com.android.bubble.BubbleComponent;
 import com.android.bubble.BubbleInfo;
 import com.android.bubble.BubbleInfo.Action;
+import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.configprovider.ConfigProviderComponent;
 import com.android.dialer.contacts.ContactsComponent;
