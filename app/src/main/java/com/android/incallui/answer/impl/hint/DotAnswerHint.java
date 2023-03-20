@@ -31,6 +31,8 @@ import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 import android.widget.TextView;
 
+import com.android.dialer.R;
+
 /** An Answer hint that uses a green swiping dot. */
 public class DotAnswerHint implements AnswerHint {
 

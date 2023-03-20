@@ -24,6 +24,8 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+
+import com.android.dialer.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
 import android.text.TextUtils;

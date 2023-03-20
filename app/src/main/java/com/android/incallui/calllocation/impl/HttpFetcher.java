@@ -24,7 +24,6 @@ import android.util.Pair;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.util.DialerUtils;
 import com.android.dialer.util.MoreStrings;
-import com.google.android.common.http.UrlRules;
 import java.io.ByteArrayOutputStream;
 import java.io.FilterInputStream;
 import java.io.IOException;
@@ -225,7 +224,8 @@ public class HttpFetcher {
    * @return The new url.
    */
   private static URL reWriteUrl(Context context, String url) {
-    final UrlRules rules = UrlRules.getRules(context.getContentResolver());
+    /*不对Url进行重写*/
+    /*final UrlRules rules = UrlRules.getRules(context.getContentResolver());
     final UrlRules.Rule rule = rules.matchRule(url);
     final String newUrl = rule.apply(url);
 
@@ -237,7 +237,8 @@ public class HttpFetcher {
             "url " + obfuscateUrl(url) + " is blocked.  Ignoring request.");
       }
       return null;
-    }
+    }*/
+    final String newUrl = url;
 
     if (LogUtil.isDebugEnabled()) {
       LogUtil.i("HttpFetcher.reWriteUrl", "fetching " + obfuscateUrl(newUrl));
