@@ -3,6 +3,8 @@
 #### 介绍
 Dialer android 12L 移植到AS中运行的项目
 
+基于分支: android-12.1.0_r24
+
 我修改的地方:
 1.删除了定位的LocationFragment模块
 2.所有的android.supper 转成了 androidx
