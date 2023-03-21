@@ -18,16 +18,17 @@ package com.android.dialer.interactions;
 import android.Manifest.permission;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.app.Dialog;
-import android.app.DialogFragment;
-import android.app.FragmentManager;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import android.content.Context;
-import android.content.CursorLoader;
+import androidx.loader.content.CursorLoader;
+import androidx.loader.content.Loader.OnLoadCompleteListener;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.Loader;
-import android.content.Loader.OnLoadCompleteListener;
+import androidx.loader.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -358,7 +359,7 @@ public class PhoneNumberInteraction implements OnLoadCompleteListener<Cursor> {
 
   private void showDisambiguationDialog(ArrayList<PhoneItem> phoneList) {
     // TODO(a bug): don't leak the activity
-    final Activity activity = (Activity) context;
+    final FragmentActivity activity = (FragmentActivity) context;
     if (activity.isFinishing()) {
       LogUtil.i("PhoneNumberInteraction.showDisambiguationDialog", "activity finishing");
       return;
@@ -372,7 +373,7 @@ public class PhoneNumberInteraction implements OnLoadCompleteListener<Cursor> {
 
     try {
       PhoneDisambiguationDialogFragment.show(
-          activity.getFragmentManager(),
+          activity.getSupportFragmentManager(),
           phoneList,
           interactionType,
           isVideoCall,

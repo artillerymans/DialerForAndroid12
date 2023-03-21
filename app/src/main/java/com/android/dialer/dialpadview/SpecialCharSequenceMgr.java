@@ -19,8 +19,8 @@ package com.android.dialer.dialpadview;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.app.DialogFragment;
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
 import android.app.KeyguardManager;
 import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
@@ -36,6 +36,8 @@ import android.net.Uri;
 import android.provider.Settings;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+import androidx.fragment.app.FragmentActivity;
+
 import android.telecom.PhoneAccount;
 import android.telecom.PhoneAccountHandle;
 import android.telephony.PhoneNumberUtils;
@@ -242,7 +244,7 @@ public class SpecialCharSequenceMgr {
                           subscriptionAccountHandles)
                       .build(),
                   callback);
-          dialogFragment.show(((Activity) context).getFragmentManager(), TAG_SELECT_ACCT_FRAGMENT);
+          dialogFragment.show(((FragmentActivity) context).getSupportFragmentManager(), TAG_SELECT_ACCT_FRAGMENT);
         }
 
         return true;
@@ -299,7 +301,7 @@ public class SpecialCharSequenceMgr {
                 SelectPhoneAccountDialogOptionsUtil.builderWithAccounts(subscriptionAccountHandles)
                     .build(),
                 listener);
-        dialogFragment.show(((Activity) context).getFragmentManager(), TAG_SELECT_ACCT_FRAGMENT);
+        dialogFragment.show(((FragmentActivity) context).getSupportFragmentManager(), TAG_SELECT_ACCT_FRAGMENT);
       }
       return true;
     }

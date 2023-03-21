@@ -28,7 +28,8 @@ import android.view.MenuItem;
 import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.concurrent.DialerExecutorComponent;
-import com.android.dialer.common.concurrent.UiListener;
+
+import com.android.dialer.common.concurrent.SupportUiListener;
 import com.android.dialer.glidephotomanager.PhotoInfo;
 import com.android.dialer.protos.ProtoParsers;
 import com.android.dialer.widget.DialerToolbar;
@@ -41,7 +42,7 @@ public class RttTranscriptActivity extends AppCompatActivity {
   public static final String EXTRA_PHOTO_INFO = "extra_photo_info";
 
   private RttTranscriptAdapter adapter;
-  private UiListener<RttTranscript> rttTranscriptUiListener;
+  private SupportUiListener<RttTranscript> rttTranscriptUiListener;
   private DialerToolbar toolbar;
 
   public static Intent getIntent(

@@ -16,8 +16,9 @@
 
 package com.android.dialer.common.concurrent;
 
-import android.app.FragmentManager;
 import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
+
 import com.android.dialer.common.concurrent.DialerExecutor.Worker;
 
 /**

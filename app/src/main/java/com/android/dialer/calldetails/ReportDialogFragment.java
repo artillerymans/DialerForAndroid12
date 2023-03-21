@@ -16,14 +16,18 @@
 
 package com.android.dialer.calldetails;
 
-import android.app.AlertDialog;
+
+
+
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.util.Pair;
+import androidx.fragment.app.DialogFragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;

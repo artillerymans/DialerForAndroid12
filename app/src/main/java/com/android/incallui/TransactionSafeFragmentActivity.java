@@ -20,7 +20,7 @@ import android.os.Bundle;
 import androidx.fragment.app.FragmentActivity;
 
 /**
- * A common superclass that keeps track of whether an {@link Activity} has saved its state yet or
+ * A common superclass that keeps track of whether an {@link FragmentActivity} has saved its state yet or
  * not.
  */
 public abstract class TransactionSafeFragmentActivity extends FragmentActivity {

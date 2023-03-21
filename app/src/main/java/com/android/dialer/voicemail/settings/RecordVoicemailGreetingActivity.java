@@ -19,6 +19,8 @@ package com.android.dialer.voicemail.settings;
 import android.app.Activity;
 import android.os.Bundle;
 import androidx.annotation.IntDef;
+import androidx.fragment.app.FragmentActivity;
+
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -29,7 +31,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /** Activity for recording a new voicemail greeting */
-public class RecordVoicemailGreetingActivity extends Activity implements OnClickListener {
+public class RecordVoicemailGreetingActivity extends FragmentActivity implements OnClickListener {
 
   /** Possible states of RecordButton and RecordVoicemailGreetingActivity */
   @Retention(RetentionPolicy.SOURCE)

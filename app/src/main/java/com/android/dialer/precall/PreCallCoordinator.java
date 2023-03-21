@@ -20,6 +20,8 @@ import android.app.Activity;
 import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
+import androidx.fragment.app.FragmentActivity;
+
 import com.android.dialer.callintent.CallIntentBuilder;
 import com.android.dialer.function.Consumer;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -37,7 +39,7 @@ public interface PreCallCoordinator {
 
   /** @return the activity to attach the UI to. */
   @NonNull
-  Activity getActivity();
+  FragmentActivity getActivity();
 
   /**
    * Called by a {@link PreCallAction} to abort the call. For example, the user has dismissed the

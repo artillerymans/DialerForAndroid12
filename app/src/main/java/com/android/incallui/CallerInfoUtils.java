@@ -17,8 +17,8 @@
 package com.android.incallui;
 
 import android.content.Context;
-import android.content.Loader;
-import android.content.Loader.OnLoadCompleteListener;
+import androidx.loader.content.Loader;
+
 import android.net.Uri;
 import android.telecom.TelecomManager;
 import android.text.TextUtils;
@@ -252,7 +252,7 @@ public class CallerInfoUtils {
         new ContactLoader(context, contactUri, true /* postViewNotification */);
     loader.registerListener(
         0,
-        new OnLoadCompleteListener<Contact>() {
+        new Loader.OnLoadCompleteListener<Contact>() {
           @Override
           public void onLoadComplete(Loader<Contact> loader, Contact contact) {
             try {

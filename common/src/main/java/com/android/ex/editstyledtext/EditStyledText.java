@@ -26,8 +26,8 @@ import com.android.ex.editstyledtext.EditStyledText.EditStyledTextSpans.MarqueeS
 import com.android.ex.editstyledtext.EditStyledText.EditStyledTextSpans.RescalableImageSpan;
 
 import android.R;
-import android.app.AlertDialog;
-import android.app.AlertDialog.Builder;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;

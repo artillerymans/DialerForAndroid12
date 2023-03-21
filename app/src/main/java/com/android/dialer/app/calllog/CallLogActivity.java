@@ -162,7 +162,7 @@ public class CallLogActivity extends TransactionSafeActivity
       startActivity(intent);
       return true;
     } else if (item.getItemId() == R.id.delete_all) {
-      ClearCallLogDialog.show(getFragmentManager());
+      ClearCallLogDialog.show(getSupportFragmentManager());
       return true;
     }
     return super.onOptionsItemSelected(item);

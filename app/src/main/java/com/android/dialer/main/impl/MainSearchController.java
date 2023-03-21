@@ -16,8 +16,7 @@
 
 package com.android.dialer.main.impl;
 
-import android.app.Fragment;
-import android.app.FragmentTransaction;
+import androidx.fragment.app.Fragment;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,6 +27,8 @@ import androidx.annotation.VisibleForTesting;
 import com.android.dialer.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -119,9 +120,9 @@ public class MainSearchController implements SearchBarListener {
     this.fragmentContainer = fragmentContainer;
 
     dialpadFragment =
-        (DialpadFragment) activity.getFragmentManager().findFragmentByTag(DIALPAD_FRAGMENT_TAG);
+        (DialpadFragment) activity.getSupportFragmentManager().findFragmentByTag(DIALPAD_FRAGMENT_TAG);
     searchFragment =
-        (NewSearchFragment) activity.getFragmentManager().findFragmentByTag(SEARCH_FRAGMENT_TAG);
+        (NewSearchFragment) activity.getSupportFragmentManager().findFragmentByTag(SEARCH_FRAGMENT_TAG);
   }
 
   /** Should be called if we're showing the dialpad because of a new ACTION_DIAL intent. */
@@ -160,7 +161,7 @@ public class MainSearchController implements SearchBarListener {
 
     activity.setTitle(R.string.dialpad_activity_title);
 
-    FragmentTransaction transaction = activity.getFragmentManager().beginTransaction();
+    FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
 
     // Show Search
     if (searchFragment == null) {
@@ -233,7 +234,7 @@ public class MainSearchController implements SearchBarListener {
           public void onAnimationEnd(Animation animation) {
             if (activity.isSafeToCommitTransactions()
                 && !(activity.isFinishing() || activity.isDestroyed())) {
-              activity.getFragmentManager().beginTransaction().hide(dialpadFragment).commit();
+              activity.getSupportFragmentManager().beginTransaction().hide(dialpadFragment).commit();
             }
           }
 
@@ -345,7 +346,7 @@ public class MainSearchController implements SearchBarListener {
     showBottomNav();
     toolbar.collapse(animate);
     toolbarShadow.setVisibility(View.GONE);
-    activity.getFragmentManager().beginTransaction().hide(searchFragment).commit();
+    activity.getSupportFragmentManager().beginTransaction().hide(searchFragment).commit();
 
     // Clear the dialpad so the phone number isn't persisted between search sessions.
     if (dialpadFragment != null) {
@@ -414,7 +415,7 @@ public class MainSearchController implements SearchBarListener {
     toolbarShadow.setVisibility(View.VISIBLE);
     hideBottomNav();
 
-    FragmentTransaction transaction = activity.getFragmentManager().beginTransaction();
+    FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
     // Show Search
     if (searchFragment == null) {
       searchFragment = NewSearchFragment.newInstance();
@@ -475,7 +476,7 @@ public class MainSearchController implements SearchBarListener {
       Logger.get(activity).logScreenView(ScreenEvent.Type.SETTINGS, activity);
       return true;
     } else if (menuItem.getItemId() == R.id.clear_frequents) {
-      ClearFrequentsDialog.show(activity.getFragmentManager());
+      ClearFrequentsDialog.show(activity.getSupportFragmentManager());
       Logger.get(activity).logScreenView(ScreenEvent.Type.CLEAR_FREQUENTS, activity);
       return true;
     } else if (menuItem.getItemId() == R.id.menu_call_history) {

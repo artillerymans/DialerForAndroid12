@@ -14,7 +14,7 @@
 package com.android.dialer.voicemail.settings;
 
 import android.annotation.TargetApi;
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build.VERSION_CODES;

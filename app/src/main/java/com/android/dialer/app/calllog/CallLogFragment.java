@@ -37,7 +37,6 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.legacy.app.FragmentCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -586,7 +585,7 @@ public class CallLogFragment extends Fragment
       LogUtil.i(
           "CallLogFragment.onEmptyViewActionButtonClicked",
           "Requesting permissions: " + Arrays.toString(deniedPermissions));
-      FragmentCompat.requestPermissions(this, deniedPermissions, PHONE_PERMISSIONS_REQUEST_CODE);
+      requestPermissions(deniedPermissions, PHONE_PERMISSIONS_REQUEST_CODE);
     } else if (!isCallLogActivity) {
       LogUtil.i("CallLogFragment.onEmptyViewActionButtonClicked", "showing dialpad");
       // Show dialpad if we are not in the call log activity.

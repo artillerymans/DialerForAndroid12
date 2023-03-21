@@ -16,7 +16,7 @@
 
 package com.android.dialer.widget;
 
-import android.app.Activity;
+import androidx.fragment.app.FragmentActivity;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -45,7 +45,7 @@ public class FloatingActionButtonController {
   private int fabIconId = -1;
   private int screenWidth;
 
-  public FloatingActionButtonController(Activity activity, FloatingActionButton fab) {
+  public FloatingActionButtonController(FragmentActivity activity, FloatingActionButton fab) {
     Resources resources = activity.getResources();
     fabInterpolator =
         AnimationUtils.loadInterpolator(activity, android.R.interpolator.fast_out_slow_in);

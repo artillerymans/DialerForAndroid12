@@ -117,7 +117,7 @@ public class GalleryComposerFragment extends CallComposerFragment
         DialerExecutorComponent.get(getContext())
             .dialerExecutorFactory()
             .createUiTaskBuilder(
-                getActivity().getFragmentManager(),
+                getActivity().getSupportFragmentManager(),
                 "copyAndResizeImage",
                 new CopyAndResizeImageWorker(getActivity().getApplicationContext()))
             .onSuccess(

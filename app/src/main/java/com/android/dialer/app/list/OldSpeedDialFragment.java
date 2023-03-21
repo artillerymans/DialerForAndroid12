@@ -29,8 +29,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Trace;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.legacy.app.FragmentCompat;
+
 import androidx.collection.LongSparseArray;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.CursorLoader;
@@ -66,8 +67,7 @@ import java.util.Arrays;
 public class OldSpeedDialFragment extends Fragment
     implements OnItemClickListener,
         PhoneFavoritesTileAdapter.OnDataSetChangedForAnimationListener,
-        EmptyContentView.OnEmptyViewActionButtonClickedListener,
-        FragmentCompat.OnRequestPermissionsResultCallback {
+        EmptyContentView.OnEmptyViewActionButtonClickedListener {
 
   private static final int READ_CONTACTS_PERMISSION_REQUEST_CODE = 1;
 
@@ -357,8 +357,7 @@ public class OldSpeedDialFragment extends Fragment
       LogUtil.i(
           "OldSpeedDialFragment.onEmptyViewActionButtonClicked",
           "Requesting permissions: " + Arrays.toString(deniedPermissions));
-      FragmentCompat.requestPermissions(
-          this, deniedPermissions, READ_CONTACTS_PERMISSION_REQUEST_CODE);
+      requestPermissions(deniedPermissions, READ_CONTACTS_PERMISSION_REQUEST_CODE);
     } else {
       // Switch tabs
       FragmentUtils.getParentUnsafe(this, HostInterface.class).showAllContactsTab();

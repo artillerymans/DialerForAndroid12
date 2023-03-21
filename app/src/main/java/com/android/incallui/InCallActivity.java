@@ -19,7 +19,7 @@ package com.android.incallui;
 import android.app.ActivityManager;
 import android.app.ActivityManager.AppTask;
 import android.app.ActivityManager.TaskDescription;
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.app.Dialog;
 import android.app.KeyguardManager;
 import android.content.Context;
@@ -61,8 +61,8 @@ import com.android.dialer.animation.AnimationListenerAdapter;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.common.concurrent.DialerExecutorComponent;
+import com.android.dialer.common.concurrent.SupportUiListener;
 import com.android.dialer.common.concurrent.ThreadUtil;
-import com.android.dialer.common.concurrent.UiListener;
 import com.android.dialer.configprovider.ConfigProviderComponent;
 import com.android.dialer.logging.Logger;
 import com.android.dialer.logging.ScreenEvent;
@@ -133,7 +133,7 @@ public class InCallActivity extends TransactionSafeFragmentActivity
   private static Optional<Integer> audioRouteForTesting = Optional.empty();
 
   private SelectPhoneAccountListener selectPhoneAccountListener;
-  private UiListener<Result> preferredAccountWorkerResultListener;
+  private SupportUiListener<Result> preferredAccountWorkerResultListener;
 
   private Animation dialpadSlideInAnimation;
   private Animation dialpadSlideOutAnimation;
@@ -243,7 +243,7 @@ public class InCallActivity extends TransactionSafeFragmentActivity
 
       SelectPhoneAccountDialogFragment selectPhoneAccountDialogFragment =
           (SelectPhoneAccountDialogFragment)
-              getFragmentManager().findFragmentByTag(Tags.SELECT_ACCOUNT_FRAGMENT);
+                  getSupportFragmentManager().findFragmentByTag(Tags.SELECT_ACCOUNT_FRAGMENT);
       if (selectPhoneAccountDialogFragment != null) {
         selectPhoneAccountDialogFragment.setListener(selectPhoneAccountListener);
       }
@@ -404,7 +404,7 @@ public class InCallActivity extends TransactionSafeFragmentActivity
               SelectPhoneAccountDialogFragment.newInstance(
                   result.getDialogOptionsBuilder().get().setCallId(callId).build(),
                   selectPhoneAccountListener);
-          selectPhoneAccountDialogFragment.show(getFragmentManager(), Tags.SELECT_ACCOUNT_FRAGMENT);
+          selectPhoneAccountDialogFragment.show(getSupportFragmentManager(), Tags.SELECT_ACCOUNT_FRAGMENT);
         },
         throwable -> {
           throw new RuntimeException(throwable);

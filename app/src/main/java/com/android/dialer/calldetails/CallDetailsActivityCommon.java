@@ -18,7 +18,6 @@ package com.android.dialer.calldetails;
 
 import android.Manifest.permission;
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,7 +28,7 @@ import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresPermission;
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.Toolbar;
@@ -46,7 +45,7 @@ import com.android.dialer.common.concurrent.DialerExecutor.FailureListener;
 import com.android.dialer.common.concurrent.DialerExecutor.SuccessListener;
 import com.android.dialer.common.concurrent.DialerExecutor.Worker;
 import com.android.dialer.common.concurrent.DialerExecutorComponent;
-import com.android.dialer.common.concurrent.UiListener;
+import com.android.dialer.common.concurrent.SupportUiListener;
 import com.android.dialer.common.database.Selection;
 import com.android.dialer.enrichedcall.EnrichedCallComponent;
 import com.android.dialer.enrichedcall.EnrichedCallManager;
@@ -76,7 +75,7 @@ import java.util.Map;
  * Contains common logic shared between {@link OldCallDetailsActivity} and {@link
  * CallDetailsActivity}.
  */
-abstract class CallDetailsActivityCommon extends AppCompatActivity {
+abstract class CallDetailsActivityCommon extends FragmentActivity {
 
   public static final String EXTRA_PHONE_NUMBER = "phone_number";
   public static final String EXTRA_HAS_ENRICHED_CALL_DATA = "has_enriched_call_data";
@@ -97,7 +96,7 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
 
   private CallDetailsAdapterCommon adapter;
   private CallDetailsEntries callDetailsEntries;
-  private UiListener<ImmutableSet<String>> checkRttTranscriptAvailabilityListener;
+  private SupportUiListener<ImmutableSet<String>> checkRttTranscriptAvailabilityListener;
 
   /**
    * Handles the intent that launches {@link OldCallDetailsActivity} or {@link CallDetailsActivity},
@@ -369,7 +368,7 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
       DialerExecutorComponent.get(getActivity().getApplicationContext())
           .dialerExecutorFactory()
           .createUiTaskBuilder(
-              getActivity().getFragmentManager(),
+              getActivity().getSupportFragmentManager(),
               "CallDetailsActivityCommon.createAssistedDialerNumberParserTask",
               new AssistedDialingNumberParseWorker())
           .onSuccess(successListener)
@@ -438,16 +437,16 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
 
   private static final class ReportCallIdListener
       implements CallDetailsFooterViewHolder.ReportCallIdListener {
-    private final WeakReference<Activity> activityWeakReference;
+    private final WeakReference<FragmentActivity> activityWeakReference;
 
-    ReportCallIdListener(Activity activity) {
+    ReportCallIdListener(FragmentActivity activity) {
       this.activityWeakReference = new WeakReference<>(activity);
     }
 
     @Override
     public void reportCallId(String number) {
       ReportDialogFragment.newInstance(number)
-          .show(getActivity().getFragmentManager(), null /* tag */);
+          .show(getActivity().getSupportFragmentManager(), null /* tag */);
     }
 
     @Override
@@ -455,7 +454,7 @@ abstract class CallDetailsActivityCommon extends AppCompatActivity {
       return getActivity().getIntent().getExtras().getBoolean(EXTRA_CAN_REPORT_CALLER_ID, false);
     }
 
-    private Activity getActivity() {
+    private FragmentActivity getActivity() {
       return Preconditions.checkNotNull(activityWeakReference.get());
     }
   }

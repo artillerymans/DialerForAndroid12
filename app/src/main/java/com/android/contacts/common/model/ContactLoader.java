@@ -16,7 +16,7 @@
 
 package com.android.contacts.common.model;
 
-import android.content.AsyncTaskLoader;
+import androidx.loader.content.AsyncTaskLoader;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;

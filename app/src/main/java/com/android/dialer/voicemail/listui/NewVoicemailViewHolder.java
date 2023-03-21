@@ -18,7 +18,7 @@ package com.android.dialer.voicemail.listui;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 
-import android.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;

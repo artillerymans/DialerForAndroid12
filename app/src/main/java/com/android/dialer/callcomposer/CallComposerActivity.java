@@ -230,7 +230,7 @@ public class CallComposerActivity extends AppCompatActivity
         DialerExecutorComponent.get(getApplicationContext())
             .dialerExecutorFactory()
             .createUiTaskBuilder(
-                getFragmentManager(),
+                getSupportFragmentManager(),
                 "copyAndResizeImageToSend",
                 new CopyAndResizeImageWorker(this.getApplicationContext()))
             .onSuccess(this::onCopyAndResizeImageSuccess)

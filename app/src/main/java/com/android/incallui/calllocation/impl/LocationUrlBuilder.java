@@ -23,6 +23,9 @@ import android.location.Location;
 import android.net.Uri;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
+
+import com.android.dialer.R;
+
 import java.util.Locale;
 
 class LocationUrlBuilder {

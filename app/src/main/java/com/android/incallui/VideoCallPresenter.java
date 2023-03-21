@@ -16,12 +16,14 @@
 
 package com.android.incallui;
 
-import android.app.Activity;
+
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Handler;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+
 import android.telecom.InCallService.VideoCall;
 import android.telecom.VideoProfile;
 import android.telecom.VideoProfile.CameraCapabilities;
@@ -1121,7 +1123,7 @@ public class VideoCallPresenter
   }
 
   private void updateRemoteVideoSurfaceDimensions() {
-    Activity activity = videoCallScreen.getVideoCallScreenFragment().getActivity();
+    FragmentActivity activity = videoCallScreen.getVideoCallScreenFragment().getActivity();
     if (activity != null) {
       Point screenSize = new Point();
       activity.getWindowManager().getDefaultDisplay().getSize(screenSize);

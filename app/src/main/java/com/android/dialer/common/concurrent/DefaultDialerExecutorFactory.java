@@ -16,7 +16,7 @@
 
 package com.android.dialer.common.concurrent;
 
-import android.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.android.dialer.common.Assert;

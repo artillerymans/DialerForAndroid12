@@ -164,7 +164,7 @@ public final class CallLogConfigImpl implements CallLogConfig {
 
   @Override
   public boolean isNewPeerEnabled() {
-    return sharedPreferences.getBoolean(NEW_PEER_ENABLED_PREF_KEY, false);
+    return sharedPreferences.getBoolean(NEW_PEER_ENABLED_PREF_KEY, true);
   }
 
   /**

@@ -16,7 +16,7 @@
 
 package com.android.dialer.blocking;
 
-import android.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;

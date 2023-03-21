@@ -21,6 +21,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+
 import android.telecom.PhoneAccountHandle;
 import android.telecom.TelecomManager;
 import android.telecom.VideoProfile;
@@ -41,7 +43,7 @@ import com.google.common.collect.ImmutableList;
  *
  * @see CallIntentBuilder
  */
-public class LaunchPreCallActivity extends Activity {
+public class LaunchPreCallActivity extends FragmentActivity {
 
   public static final String ACTION_LAUNCH_PRE_CALL = "com.android.dialer.LAUNCH_PRE_CALL";
 

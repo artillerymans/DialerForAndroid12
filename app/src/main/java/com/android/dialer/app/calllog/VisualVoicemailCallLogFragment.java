@@ -83,7 +83,7 @@ public class VisualVoicemailCallLogFragment extends CallLogFragment {
         DialerExecutorComponent.get(getContext())
             .dialerExecutorFactory()
             .createUiTaskBuilder(
-                getActivity().getFragmentManager(),
+                getActivity().getSupportFragmentManager(),
                 "fetchVoicemailStatus",
                 new VoicemailStatusWorker())
             .onSuccess(this::onPreSyncVoicemailStatusChecked)

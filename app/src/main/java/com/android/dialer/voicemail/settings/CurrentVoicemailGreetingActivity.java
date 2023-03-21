@@ -24,6 +24,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentActivity;
+
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
@@ -36,7 +38,7 @@ import java.io.IOException;
 import java.util.Locale;
 
 /** Activity to display current voicemail greeting and allow user to navigate to record a new one */
-public class CurrentVoicemailGreetingActivity extends Activity {
+public class CurrentVoicemailGreetingActivity extends FragmentActivity {
   public static final String VOICEMAIL_GREETING_FILEPATH_KEY = "canonVoicemailGreetingFilePathKey";
 
   private static final int REQUEST_RECORD_AUDIO_PERMISSION = 200;

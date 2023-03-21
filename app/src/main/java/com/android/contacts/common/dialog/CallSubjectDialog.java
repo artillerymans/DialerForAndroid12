@@ -41,6 +41,9 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
+
+import androidx.fragment.app.FragmentActivity;
+
 import com.android.dialer.animation.AnimUtils;
 import com.android.dialer.callintent.CallInitiationType;
 import com.android.dialer.callintent.CallIntentBuilder;
@@ -58,7 +61,7 @@ import java.util.List;
  * Implements a dialog which prompts for a call subject for an outgoing call. The dialog includes a
  * pop up list of historical call subjects.
  */
-public class CallSubjectDialog extends Activity {
+public class CallSubjectDialog extends FragmentActivity {
 
   public static final String PREF_KEY_SUBJECT_HISTORY_COUNT = "subject_history_count";
   public static final String PREF_KEY_SUBJECT_HISTORY_ITEM = "subject_history_item";

@@ -16,10 +16,10 @@
 
 package com.android.dialer.calldetails;
 
-import android.app.LoaderManager.LoaderCallbacks;
+import androidx.loader.app.LoaderManager.LoaderCallbacks;
 import android.content.Context;
 import android.content.Intent;
-import android.content.Loader;
+import androidx.loader.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
 import com.android.dialer.CoalescedIds;
@@ -83,7 +83,7 @@ public final class CallDetailsActivity extends CallDetailsActivityCommon {
         ProtoParsers.getTrusted(
             intent, EXTRA_HEADER_INFO, CallDetailsHeaderInfo.getDefaultInstance());
 
-    getLoaderManager()
+    getSupportLoaderManager()
         .initLoader(
             CALL_DETAILS_LOADER_ID, /* args = */ null, new CallDetailsLoaderCallbacks(this));
   }

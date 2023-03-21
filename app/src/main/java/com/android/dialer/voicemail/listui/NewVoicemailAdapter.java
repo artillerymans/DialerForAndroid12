@@ -15,7 +15,7 @@
  */
 package com.android.dialer.voicemail.listui;
 
-import android.app.FragmentManager;
+import androidx.fragment.app.FragmentManager;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;

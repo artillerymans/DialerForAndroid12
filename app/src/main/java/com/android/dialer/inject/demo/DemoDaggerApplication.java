@@ -24,12 +24,12 @@ import com.android.dialer.inject.DialerVariant;
 import com.android.dialer.inject.HasRootComponent;
 
 /** Demo dialer dagger application. */
-@DialerRootComponent(variant = DialerVariant.DIALER_DEMO)
+/*@DialerRootComponent(variant = DialerVariant.DIALER_DEMO)
 public final class DemoDaggerApplication extends Application implements HasRootComponent {
 
   private volatile Object rootComponent;
 
-  /** Returns a cached instance of application's root component. */
+  *//** Returns a cached instance of application's root component. *//*
   @Override
   @NonNull
   public final Object component() {
@@ -52,4 +52,4 @@ public final class DemoDaggerApplication extends Application implements HasRootC
 
     DemoSubcomponent.get(this).demoObjects();
   }
-}
+}*/

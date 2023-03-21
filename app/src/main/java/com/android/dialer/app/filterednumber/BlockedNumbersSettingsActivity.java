@@ -43,12 +43,12 @@ public class BlockedNumbersSettingsActivity extends AppCompatActivity {
   public void showManagementUi() {
     BlockedNumbersFragment fragment =
         (BlockedNumbersFragment)
-            getFragmentManager().findFragmentByTag(TAG_BLOCKED_MANAGEMENT_FRAGMENT);
+                getSupportFragmentManager().findFragmentByTag(TAG_BLOCKED_MANAGEMENT_FRAGMENT);
     if (fragment == null) {
       fragment = new BlockedNumbersFragment();
     }
 
-    getFragmentManager()
+    getSupportFragmentManager()
         .beginTransaction()
         .replace(R.id.blocked_numbers_activity_container, fragment, TAG_BLOCKED_MANAGEMENT_FRAGMENT)
         .commit();
@@ -63,12 +63,12 @@ public class BlockedNumbersSettingsActivity extends AppCompatActivity {
   public void showNumbersToImportPreviewUi() {
     ViewNumbersToImportFragment fragment =
         (ViewNumbersToImportFragment)
-            getFragmentManager().findFragmentByTag(TAG_VIEW_NUMBERS_TO_IMPORT_FRAGMENT);
+                getSupportFragmentManager().findFragmentByTag(TAG_VIEW_NUMBERS_TO_IMPORT_FRAGMENT);
     if (fragment == null) {
       fragment = new ViewNumbersToImportFragment();
     }
 
-    getFragmentManager()
+    getSupportFragmentManager()
         .beginTransaction()
         .replace(
             R.id.blocked_numbers_activity_container, fragment, TAG_VIEW_NUMBERS_TO_IMPORT_FRAGMENT)

@@ -16,7 +16,7 @@
 
 package com.android.dialer.voicemail.listui.error;
 
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;

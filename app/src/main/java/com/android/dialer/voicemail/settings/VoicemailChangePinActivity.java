@@ -18,7 +18,7 @@ package com.android.dialer.voicemail.settings;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.app.AlertDialog;
+import androidx.appcompat.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -28,6 +28,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
+
 import android.telecom.PhoneAccountHandle;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -65,7 +67,7 @@ import java.lang.ref.WeakReference;
  * VoicemailClient#PARAM_PHONE_ACCOUNT_HANDLE}
  */
 @TargetApi(VERSION_CODES.O)
-public class VoicemailChangePinActivity extends Activity
+public class VoicemailChangePinActivity extends FragmentActivity
     implements OnClickListener, OnEditorActionListener, TextWatcher {
 
   private static final String TAG = "VmChangePinActivity";
@@ -360,7 +362,7 @@ public class VoicemailChangePinActivity extends Activity
     changePinExecutor =
         DialerExecutorComponent.get(this)
             .dialerExecutorFactory()
-            .createUiTaskBuilder(getFragmentManager(), "changePin", new ChangePinWorker())
+            .createUiTaskBuilder(getSupportFragmentManager(), "changePin", new ChangePinWorker())
             .onSuccess(this::sendResult)
             .onFailure((tr) -> sendResult(PinChanger.CHANGE_PIN_SYSTEM_ERROR))
             .build();

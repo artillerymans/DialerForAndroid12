@@ -36,6 +36,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.android.dialer.R;
+import com.android.dialer.common.concurrent.SupportUiListener;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -84,7 +85,6 @@ import com.android.dialer.common.LogUtil;
 import com.android.dialer.common.concurrent.DefaultFutureCallback;
 import com.android.dialer.common.concurrent.DialerExecutorComponent;
 import com.android.dialer.common.concurrent.ThreadUtil;
-import com.android.dialer.common.concurrent.UiListener;
 import com.android.dialer.configprovider.ConfigProviderComponent;
 import com.android.dialer.constants.ActivityRequestCodes;
 import com.android.dialer.contactsfragment.ContactsFragment;
@@ -208,8 +208,8 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
   private MainBottomNavBarBottomNavTabListener bottomNavTabListener;
   private View snackbarContainer;
   private MissedCallCountObserver missedCallCountObserver;
-  private UiListener<String> getLastOutgoingCallListener;
-  private UiListener<Integer> missedCallObserverUiListener;
+  private SupportUiListener<String> getLastOutgoingCallListener;
+  private SupportUiListener<Integer> missedCallObserverUiListener;
   private View bottomSheet;
 
   public static Intent getShowTabIntent(Context context, @TabIndex int tabIndex) {
@@ -265,7 +265,7 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
             .createUiListener(activity.getSupportFragmentManager(), "Query last phone number");
     missedCallObserverUiListener =
         DialerExecutorComponent.get(activity)
-            .createUiListener(activity.getFragmentManager(), "Missed call observer");
+            .createUiListener(activity.getSupportFragmentManager(), "Missed call observer");
   }
 
   private void initLayout(Bundle savedInstanceState) {
@@ -755,10 +755,10 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
 
     private final MainSearchController searchController;
     private final Context context;
-    private final UiListener<String> listener;
+    private final SupportUiListener<String> listener;
 
     MainDialpadListener(
-        Context context, MainSearchController searchController, UiListener<String> uiListener) {
+        Context context, MainSearchController searchController, SupportUiListener<String> uiListener) {
       this.context = context;
       this.searchController = searchController;
       this.listener = uiListener;
@@ -1313,7 +1313,7 @@ public class OldMainActivityPeer implements MainActivityPeer, FragmentUtilListen
     private final FloatingActionButton fab;
     private final View bottomSheet;
 
-    @TabIndex private int selectedTab = -1;
+    @TabIndex private int selectedTab = TabIndex.SPEED_DIAL;
 
     private MainBottomNavBarBottomNavTabListener(
         TransactionSafeActivity activity,

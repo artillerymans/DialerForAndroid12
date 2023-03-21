@@ -17,7 +17,8 @@
 package com.android.dialer.searchfragment.cp2;
 
 import android.content.Context;
-import android.content.CursorLoader;
+
+
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.database.MergeCursor;
@@ -26,6 +27,8 @@ import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Directory;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.loader.content.CursorLoader;
+
 import android.text.TextUtils;
 
 import com.android.dialer.R;
